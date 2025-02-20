@@ -1,0 +1,87 @@
+.DigimonInfoPage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.DigimonInfoPageImage{
+    box-shadow: 0px 0px 15px rgb(97, 213, 255);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.attribute{
+    padding: 5px 10px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.DigimonInfoPageAttributes{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.DigimonInfoPageRow{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.listAttribute{
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 1em;
+}
+
+.listAttribute img{
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0px;
+    width: 20px;
+}
+
+.DigimonInfoPageContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    padding: 5px 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 1em;
+    
+}
+
+.DigimonInfoPageTitle{
+    width: 100%;
+    border-bottom: 2px solid rgb(243, 243, 243);
+    box-shadow: 0px 15px 15px rgba(97, 213, 255, 0.5);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.DigimonInfoPageLinkD{
+    width: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px rgb(97, 213, 255);
+    margin-bottom: 10px;
+    padding: 5px 5%;
+    border-radius: 10px;
+}
+
+.DigimonInfoPageLinkD img{
+    height: 100%;
+}

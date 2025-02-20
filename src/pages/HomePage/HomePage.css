@@ -1,0 +1,32 @@
+.homePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.homePage img{
+    width: 100%;
+}
+
+.homePage .row{
+    width: 90%;
+    height: 30%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-link{
+    height: 100px;
+    width: 40%;
+    border-radius: 10px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
