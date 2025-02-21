@@ -6,6 +6,9 @@
     position: fixed;
     bottom: 0;
     height: 10%;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(97, 213, 255);
+    padding-top: 10px;
 }
 
 .nav-link{
