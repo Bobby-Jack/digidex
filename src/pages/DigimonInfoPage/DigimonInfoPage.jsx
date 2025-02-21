@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import AbortController from 'abort-controller'
 import { getDigimonInfo } from '../../api/digiRequest'
 import "./DigimonInfoPage.css"
@@ -9,6 +9,7 @@ import DefaultTemplate from '../../templates/DefaultTemplate/DefaultTemplate'
 export default function DigimonInfoPage() {
     const [data, setData] = useState(null)
     const { id } = useParams()
+    const nav = useNavigate()
     useEffect(() => {
         const controller = new AbortController()
         async function fetchingApi() {
@@ -66,7 +67,7 @@ export default function DigimonInfoPage() {
                                             <h3>Regresion for {data.name}</h3>
                                             {
                                                 data.priorEvolutions.map((d, key)=>(
-                                                    <div className='DigimonInfoPageLinkD' key={key}>
+                                                    <div onClick={()=>{nav("/digimonInfo/"+d.id)}} className='DigimonInfoPageLinkD' key={key}>
                                                         <img src={d.image} alt="" />
                                                         <span>{d.digimon}</span>
                                                     </div>
